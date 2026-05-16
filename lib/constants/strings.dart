@@ -14,3 +14,11 @@ const List<Map<String, String>> mockRecently = [
   {'title': 'Focus Flow', 'subtitle': 'Instrumental', 'image': 'assets/images/placeholder.svg'},
   {'title': 'Workout Mix', 'subtitle': 'Beats', 'image': 'assets/images/placeholder.svg'},
 ];
+
+const List<Map<String, String>> mockArtists = [
+  {'name': 'The Weeknd'},
+  {'name': 'Taylor Swift'},
+  {'name': 'Drake'},
+  {'name': 'Bad Bunny'},
+  {'name': 'Ed Sheeran'},
+];

@@ -3,6 +3,8 @@ import 'package:spotify_ui_clone/widgets/featured_section.dart';
 import 'package:spotify_ui_clone/widgets/section_header.dart';
 import 'package:spotify_ui_clone/widgets/recently_played_grid.dart';
 import 'package:spotify_ui_clone/widgets/featured_card.dart';
+import 'package:spotify_ui_clone/widgets/filter_chips_section.dart';
+import 'package:spotify_ui_clone/widgets/artist_section.dart';
 import 'package:spotify_ui_clone/constants/colors.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -27,6 +29,8 @@ class HomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 SizedBox(height: 8),
+                FilterChipsSection(),
+                SizedBox(height: 16),
                 RecentlyPlayedGrid(),
                 SizedBox(height: 24),
                 FeaturedCard(),
@@ -36,6 +40,9 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: 24),
                 SectionHeader(title: 'Made for You'),
                 FeaturedSection(),
+                SizedBox(height: 24),
+                SectionHeader(title: 'Your Top Artists'),
+                ArtistSection(),
                 SizedBox(height: 24),
               ],
             ),
